@@ -1,6 +1,6 @@
 # RFXServer
 
-RFXServer is a small project that aims to capture messages received by RFXtrx433 (USB) transreceiver and simply write them as JSON objects to a log file. From there, the log can be easily processed with your favorite analytics tool (Splunk, ELK, ...) and you can build "Advanced Home Analytics" ! (-:
+RFXServer is a small project that aims to capture messages received by RFXtrx433 (USB) transceivers and simply write them as JSON objects to a log file. From there, the log can be easily processed with your favorite analytics tool (Splunk, ELK, ...) and you can build "Advanced Home Analytics" ! (-:
 
 This server is a generic approach and will write any message as a JSON object. I tried it with Oregon sensors, but it should work with anything else discussing with a RFXtrx transceiver.
 
