@@ -32,6 +32,12 @@ $ systemctl daemon-reload
 $ sudo update-rc.d rfxserver.sh defaults
 ```
 
+# Dashboard Example
+
+Once you get the data, it's easy to create meaningful representation of it, here with Splunk 6.5
+
+![](images/temperatures.png)
+
 
 # Thanks
 
