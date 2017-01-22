@@ -1,16 +1,16 @@
 # RFXServer
 
-RFXServer is a small project that aims to capture messages received by RFXtrx433 (USB) transreceiver and simply write them as JSON objects to a log file. From there, the log can be easily processed with your favorite analytics tool (Splunk, ELK, ...).  From there, you can build "Advanced Home Analytics" ! (-:
+RFXServer is a small project that aims to capture messages received by RFXtrx433 (USB) transreceiver and simply write them as JSON objects to a log file. From there, the log can be easily processed with your favorite analytics tool (Splunk, ELK, ...) and you can build "Advanced Home Analytics" ! (-:
 
 This server is a generic approach and will write any message as a JSON object. I tried it with Oregon sensors, but it should work with anything else discussing with a RFXtrx transceiver.
 
 # Logs
 
 /var/log/rfxserver/app.log
-	Where messages received over RFXtrx433 are written to as JSON.
+* Where messages received over RFXtrx433 are written to as JSON.
 
 /var/log/rfxserver/error.log
-	Where rfxserver state messages are written to.
+* Where rfxserver state messages are written to.
 
 A log message will looks like the folllwing:
 
@@ -21,6 +21,7 @@ A log message will looks like the folllwing:
 
 # Installation
 
+```
 $ git clone ...
 $ mkdir /var/log/rfxserver
 $ cp -r server /usr/local/bin/rfxserver
@@ -29,6 +30,7 @@ $ chmod 0755 /etc/init.d/rfxserver.sh
 $ chmod +x /usr/local/bin/rfxserver/rfxserver.py
 $ systemctl daemon-reload
 $ sudo update-rc.d rfxserver.sh defaults
+```
 
 
 # Thanks
